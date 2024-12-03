@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thing:blank_key"
+    },
+    "B": {
+      "item": "thing:dragon_frag"
+    },
+    "C": {
+      "item": "thing:wither_frag"
+    },
+    "D": {
+      "item": "thing:warden_frag"
+    }
+  },
+  "pattern": [
+    "AB",
+    "CD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thing:world_key"
+  }
+}
