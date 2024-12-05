@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "thing:block/world_block"
+    }
+  }
+}

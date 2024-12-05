@@ -5,9 +5,12 @@
   "item.thing.warden_frag": "Warden Fragment",
   "item.thing.world_key": "World Key",
 
+  "block.thing.corrupted_ground": "Corrupted Ground",
+  "block.thing.corrupted_ore": "Ore of the Corrupted",
+  "block.thing.corrupted_block": "Block of the Corrupted",
+  "block.thing.world_block": "World's Block",
+  "block.thing.xielstone": "Xielstone",
 
-
-
-
-  "creativetab.thing.mod_items": "Modded Items"
+  "creativetab.thing.phase_0": "Phase 0",
+  "creativetab.thing.corrupted": "Corrupted"
 }
