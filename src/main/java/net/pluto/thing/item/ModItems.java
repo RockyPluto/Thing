@@ -21,7 +21,12 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> WORLD_KEY = ITEMS.register("world_key",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> CORRUPTED_INGOT = ITEMS.register("corrupted_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CORRUPTED_SHARD = ITEMS.register("corrupted_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WORLD_INGOT = ITEMS.register("world_ingot",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

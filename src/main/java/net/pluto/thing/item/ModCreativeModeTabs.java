@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Thing.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("mod_items_tab",
+    public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WORLD_KEY.get()))
                     .title(Component.translatable("creativetab.thing.phase_0"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -25,16 +25,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.WORLD_KEY.get());
                         output.accept(ModBlocks.WORLD_BLOCK.get());
                         output.accept(ModBlocks.XIELSTONE.get());
+                        output.accept(ModItems.WORLD_INGOT.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> CORRUPTED = CREATIVE_MODE_TABS.register("corrupted",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CORRUPTED_GROUND.get()))
                     .withTabsBefore(PHASE_0.getId())
-                    .title(Component.translatable("creativetab.thing.mod_blocks"))
+                    .title(Component.translatable("creativetab.thing.corrupted"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.CORRUPTED_GROUND.get());
                         output.accept(ModBlocks.CORRUPTED_ORE.get());
                         output.accept(ModBlocks.CORRUPTED_BLOCK.get());
+                        output.accept(ModItems.CORRUPTED_INGOT.get());
+                        output.accept(ModItems.CORRUPTED_SHARD.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

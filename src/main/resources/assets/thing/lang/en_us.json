@@ -3,7 +3,10 @@
   "item.thing.dragon_frag": "Dragon Fragment",
   "item.thing.wither_frag": "Wither Fragment",
   "item.thing.warden_frag": "Warden Fragment",
-  "item.thing.world_key": "World Key",
+  "item.thing.world_key": "World's Key",
+  "item.thing.corrupted_ingot": "Ingot of the Corrupted",
+  "item.thing.corrupted_shard": "Shard of the Corrupted",
+  "item.thing.world_ingot": "World's Ingot",
 
   "block.thing.corrupted_ground": "Corrupted Ground",
   "block.thing.corrupted_ore": "Ore of the Corrupted",
