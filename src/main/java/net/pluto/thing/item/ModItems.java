@@ -27,6 +27,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> WORLD_INGOT = ITEMS.register("world_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASMITE = ITEMS.register("asmite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ASMITE = ITEMS.register("raw_asmite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BARITE = ITEMS.register("barite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_BARITE = ITEMS.register("raw_barite",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

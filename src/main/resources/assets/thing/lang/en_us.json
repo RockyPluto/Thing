@@ -7,6 +7,10 @@
   "item.thing.corrupted_ingot": "Ingot of the Corrupted",
   "item.thing.corrupted_shard": "Shard of the Corrupted",
   "item.thing.world_ingot": "World's Ingot",
+  "item.thing.asmite": "Asmite Ingot",
+  "item.thing.raw_asmite": "Raw Asmite",
+  "item.thing.barite": "Barite Ingot",
+  "item.thing.raw_barite": "Raw Barite",
 
   "block.thing.corrupted_ground": "Corrupted Ground",
   "block.thing.corrupted_ore": "Ore of the Corrupted",
@@ -15,5 +19,6 @@
   "block.thing.xielstone": "Xielstone",
 
   "creativetab.thing.phase_0": "Phase 0",
-  "creativetab.thing.corrupted": "Corrupted"
+  "creativetab.thing.corrupted": "Corrupted",
+  "creativetab.thing.non_story_line": "Non Story Line"
 }

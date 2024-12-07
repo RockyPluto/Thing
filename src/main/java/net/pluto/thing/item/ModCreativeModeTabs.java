@@ -14,8 +14,19 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Thing.MOD_ID);
 
+    public static final RegistryObject<CreativeModeTab> NON_STORY_LINE = CREATIVE_MODE_TABS.register("non_story_line",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASMITE.get()))
+                    .title(Component.translatable("creativetab.thing.non_story_line"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.ASMITE.get());
+                        output.accept(ModItems.RAW_ASMITE.get());
+                        output.accept(ModItems.BARITE.get());
+                        output.accept(ModItems.RAW_BARITE.get());
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WORLD_KEY.get()))
+                    .withTabsBefore(NON_STORY_LINE.getId())
                     .title(Component.translatable("creativetab.thing.phase_0"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLANK_KEY.get());
