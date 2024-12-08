@@ -20,8 +20,21 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ASMITE.get());
                         output.accept(ModItems.RAW_ASMITE.get());
+                        output.accept(ModBlocks.ASMITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ASMITE_BLOCK.get());
+                        output.accept(ModBlocks.ASMITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_ASMITE_ORE.get());
                         output.accept(ModItems.BARITE.get());
                         output.accept(ModItems.RAW_BARITE.get());
+                        output.accept(ModBlocks.BARITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_BARITE_BLOCK.get());
+                        output.accept(ModBlocks.BARITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_BARITE_ORE.get());
+                        output.accept(ModItems.ENDERITE.get());
+                        output.accept(ModItems.RAW_ENDERITE.get());
+                        output.accept(ModBlocks.ENDERITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ENDERITE_BLOCK.get());
+                        output.accept(ModBlocks.ENDERITE_ORE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",

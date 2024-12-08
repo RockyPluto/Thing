@@ -35,6 +35,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_BARITE = ITEMS.register("raw_barite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENDERITE = ITEMS.register("enderite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ENDERITE = ITEMS.register("raw_enderite",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

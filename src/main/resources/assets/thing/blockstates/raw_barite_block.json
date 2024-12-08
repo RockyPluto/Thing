@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "thing:block/raw_barite_block"
+    }
+  }
+}
