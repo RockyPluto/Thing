@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 6.3,
+  "group": "enderite",
+  "ingredient": {
+    "item": "thing:raw_enderite_block"
+  },
+  "result": {
+    "id": "thing:enderite_block"
+  }
+}

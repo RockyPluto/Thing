@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thing:dragon_frag"
+    },
+    {
+      "item": "thing:wither_frag"
+    },
+    {
+      "item": "thing:warden_frag"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "thing:world_ingot"
+  }
+}

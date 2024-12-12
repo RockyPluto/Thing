@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 6.3,
+  "group": "barite",
+  "ingredient": {
+    "item": "thing:raw_barite_block"
+  },
+  "result": {
+    "id": "thing:barite_block"
+  }
+}

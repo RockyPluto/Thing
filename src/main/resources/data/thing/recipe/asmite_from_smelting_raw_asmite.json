@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "asmite",
+  "ingredient": {
+    "item": "thing:raw_asmite"
+  },
+  "result": {
+    "id": "thing:asmite"
+  }
+}

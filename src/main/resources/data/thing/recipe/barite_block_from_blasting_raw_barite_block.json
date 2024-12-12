@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 6.3,
+  "group": "barite",
+  "ingredient": {
+    "item": "thing:raw_barite_block"
+  },
+  "result": {
+    "id": "thing:barite_block"
+  }
+}

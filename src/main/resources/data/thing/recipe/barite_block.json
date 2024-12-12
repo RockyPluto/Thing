@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thing:barite"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thing:barite_block"
+  }
+}

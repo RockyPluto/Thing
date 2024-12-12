@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 6.3,
+  "group": "asmite",
+  "ingredient": {
+    "item": "thing:raw_asmite_block"
+  },
+  "result": {
+    "id": "thing:asmite_block"
+  }
+}
