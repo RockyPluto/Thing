@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thing:corrupted_ore",
+    "thing:corrupted_block",
+    "thing:enderite_ore",
+    "thing:enderite_block",
+    "thing:raw_enderite_block"
+  ]
+}

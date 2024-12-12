@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "thing:corrupted_ground",
+    "thing:asmite_ore",
+    "thing:deepslate_asmite_ore",
+    "thing:asmite_block",
+    "thing:raw_asmite_block",
+    "thing:barite_ore",
+    "thing:deepslate_barite_ore",
+    "thing:barite_block",
+    "thing:raw_barite_block"
+  ]
 }

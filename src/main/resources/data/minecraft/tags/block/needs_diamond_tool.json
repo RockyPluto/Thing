@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "thing:world_block",
+    "thing:xielstone"
+  ]
+}

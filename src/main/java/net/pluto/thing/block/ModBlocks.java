@@ -36,7 +36,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> XIELSTONE = registerBlock("xielstone",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(255f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(10f).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
 
     public static final RegistryObject<Block> ASMITE_ORE = registerBlock("asmite_ore",
             () -> new Block(BlockBehaviour.Properties.of()
