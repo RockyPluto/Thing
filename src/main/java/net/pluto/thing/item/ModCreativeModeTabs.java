@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ENDERITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ENDERITE_BLOCK.get());
                         output.accept(ModBlocks.ENDERITE_ORE.get());
+                        output.accept(ModItems.CHISEL.get());
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",

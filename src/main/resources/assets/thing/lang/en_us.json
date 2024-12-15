@@ -13,6 +13,7 @@
   "item.thing.raw_barite": "Raw Barite",
   "item.thing.enderite": "Enderite Ingot",
   "item.thing.raw_enderite": "Raw Enderite",
+  "item.thing.chisel": "Chisel",
 
   "block.thing.corrupted_ground": "Ground of the Corrupted",
   "block.thing.corrupted_ore": "Ore of the Corrupted",
@@ -30,6 +31,7 @@
   "block.thing.enderite_ore": "Enderite Ore",
   "block.thing.enderite_block": "Enderite Block",
   "block.thing.raw_enderite_block": "Raw Enderite Block",
+  "block.thing.magic_block": "Magic Block",
 
   "creativetab.thing.phase_0": "Phase 0",
   "creativetab.thing.corrupted": "Corrupted",

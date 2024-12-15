@@ -1,8 +1,10 @@
 package net.pluto.thing.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pluto.thing.Thing;
+import net.pluto.thing.block.custom.MagicBlock;
 import net.pluto.thing.item.ModItems;
 
 import java.util.function.Supplier;
@@ -23,7 +26,7 @@ public class ModBlocks {
                     .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> CORRUPTED_ORE = registerBlock("corrupted_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(7, 14), BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> CORRUPTED_BLOCK = registerBlock("corrupted_block",
@@ -39,11 +42,11 @@ public class ModBlocks {
                     .strength(10f).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
 
     public static final RegistryObject<Block> ASMITE_ORE = registerBlock("asmite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> DEEPSLATE_ASMITE_ORE = registerBlock("deepslate_asmite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> ASMITE_BLOCK = registerBlock("asmite_block",
@@ -55,11 +58,11 @@ public class ModBlocks {
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> BARITE_ORE = registerBlock("barite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> DEEPSLATE_BARITE_ORE = registerBlock("deepslate_barite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> BARITE_BLOCK = registerBlock("barite_block",
@@ -71,7 +74,7 @@ public class ModBlocks {
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> ENDERITE_ORE = registerBlock("enderite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(5, 10), BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> ENDERITE_BLOCK = registerBlock("enderite_block",
@@ -81,6 +84,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_ENDERITE_BLOCK = registerBlock("raw_enderite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
