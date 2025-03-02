@@ -15,6 +15,7 @@
   "item.thing.raw_enderite": "Raw Enderite",
   "item.thing.chisel": "Chisel",
   "item.thing.onion": "Onion",
+  "item.thing.nulled_coal": "Nulled Coal",
 
   "block.thing.corrupted_ground": "Ground of the Corrupted",
   "block.thing.corrupted_ore": "Ore of the Corrupted",
@@ -36,5 +37,8 @@
 
   "creativetab.thing.phase_0": "Phase 0",
   "creativetab.thing.corrupted": "Corrupted",
-  "creativetab.thing.non_story_line": "Non Story Line"
+  "creativetab.thing.non_story_line": "Non Story Line",
+
+  "tooltip.thing.world_key": "Your key into the first §4§l§k0§r§4§lCorrupted§k0§r World"
+
 }

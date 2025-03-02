@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL.get());
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
                         output.accept(ModItems.ONION.get());
+                        output.accept(ModItems.NULLED_COAL.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",
