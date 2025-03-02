@@ -42,6 +42,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> ONION = ITEMS.register("onion",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ONION)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
