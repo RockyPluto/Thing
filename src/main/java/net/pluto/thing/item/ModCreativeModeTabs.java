@@ -14,9 +14,10 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Thing.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> NON_STORY_LINE = CREATIVE_MODE_TABS.register("non_story_line",
+    public static final RegistryObject<CreativeModeTab> TESTING = CREATIVE_MODE_TABS.register("testing",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ASMITE.get()))
-                    .title(Component.translatable("creativetab.thing.non_story_line"))
+                    /*You can put .withTabsBefore(name.getID()) to make a tab go before it*/
+                    .title(Component.translatable("creativetab.thing.testing"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ASMITE.get());
                         output.accept(ModItems.RAW_ASMITE.get());
@@ -39,13 +40,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
                         output.accept(ModItems.ONION.get());
                         output.accept(ModItems.NULLED_COAL.get());
-                    }).build());
-
-    public static final RegistryObject<CreativeModeTab> PHASE_0 = CREATIVE_MODE_TABS.register("phase_0",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WORLD_KEY.get()))
-                    .withTabsBefore(NON_STORY_LINE.getId())
-                    .title(Component.translatable("creativetab.thing.phase_0"))
-                    .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLANK_KEY.get());
                         output.accept(ModItems.DRAGON_FRAGMENT.get());
                         output.accept(ModItems.WITHER_FRAGMENT.get());
@@ -54,13 +48,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WORLD_BLOCK.get());
                         output.accept(ModBlocks.XIELSTONE.get());
                         output.accept(ModItems.WORLD_INGOT.get());
-                    }).build());
-
-    public static final RegistryObject<CreativeModeTab> CORRUPTED = CREATIVE_MODE_TABS.register("corrupted",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CORRUPTED_GROUND.get()))
-                    .withTabsBefore(PHASE_0.getId())
-                    .title(Component.translatable("creativetab.thing.corrupted"))
-                    .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.CORRUPTED_GROUND.get());
                         output.accept(ModBlocks.CORRUPTED_ORE.get());
                         output.accept(ModBlocks.CORRUPTED_BLOCK.get());

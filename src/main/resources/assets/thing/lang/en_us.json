@@ -35,9 +35,7 @@
   "block.thing.raw_enderite_block": "Raw Enderite Block",
   "block.thing.magic_block": "Magic Block",
 
-  "creativetab.thing.phase_0": "Phase 0",
-  "creativetab.thing.corrupted": "Corrupted",
-  "creativetab.thing.non_story_line": "Non Story Line",
+  "creativetab.thing.testing": "Testing",
 
   "tooltip.thing.world_key": "Your key into the first §4§l§k0§r§4§lCorrupted§k0§r World"
 
